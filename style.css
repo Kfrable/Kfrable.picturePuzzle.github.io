@@ -1,0 +1,62 @@
+#piece1{
+	height:60px;
+	width:60px;
+	position: relative;
+	border:black solid 2px;
+	border-radius:100%;
+}
+.box{
+	border: black solid;
+    height: 25px;
+    width: 29px;
+    display: inline-block;
+}
+#puzzle {
+    border: black solid 2px;
+    height: 279px;
+    width: 311px;
+    position: relative;
+    top: -162px;
+    left: 1063px;
+}
+#gameBoard {
+    height: 647px;
+    width: 936px;
+    border: black solid;
+    display: inline-table;
+    position: relative;
+    top: 121px;
+    left: 63px;
+}
+#time{
+	border: black solid;
+    height: 50px;
+    width: 303px;
+    position: relative;
+    top: -131px;
+}
+aside {
+    height: 246px;
+    width: 309px;
+    border: black solid;
+    float: right;
+    position: relative;
+    bottom: 723px;
+    right: 46px;
+}
+#img1{
+	height: 25px;
+    width: 25px;
+}
+#img2{
+	height: 25px;
+    width: 25px;
+}
+#img3{
+	height: 25px;
+    width: 25px;
+}
+#img4{
+	height: 25px;
+    width: 25px;
+}
