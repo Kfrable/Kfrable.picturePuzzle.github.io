@@ -2,13 +2,14 @@
 	height:60px;
 	width:60px;
 	position: relative;
+	left:78px;
 	border:black solid 2px;
 	border-radius:100%;
 }
 .box{
-	border: black solid;
-    height: 25px;
-    width: 29px;
+    border: black solid;
+    height: 46px;
+    width: 53px;
     display: inline-block;
 }
 #puzzle {
@@ -54,11 +55,11 @@ aside {
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
 }
-#img1{
-	height: 25px;
-    width: 29px;
+.img{
+    height: 46px;
+    width: 53px;
 }
-#img2{
+/*#img2{
 	height: 25px;
     width: 29px;
 }
@@ -69,7 +70,7 @@ aside {
 #img4{
 	height: 25px;
     width: 29px;
-}
+}*/
 body{
 	background-color: lightblue;
 }
