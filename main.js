@@ -1,4 +1,5 @@
 console.log('html connected')
+
 function begin(){
 	$('#start').on('click',function(){
 		moving();
@@ -34,13 +35,28 @@ function newGame(){
 	})
 }
 newGame();
+ 
+ let clock = 60;          //start time
+ let position = $('#time');
+ position.html(clock)    //this basically appends clock to position
+ 
+ function countDown(){
+ 	let clear = setInterval(function(){
+ 		position.html(clock);
+ 		clock -=1;    //taking the time down with one.
+ 	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
+ 	   	clearInterval(clear);
 
+ 	   }
+ 	},1000)
+ }
+  countDown()
 function expandP(){
-	$('#puzzle').animate({height:'647px'});
-	$('#puzzle').animate({width:'1350px'});
-	$('.box').animate({height:'117px'});
+	$('#puzzle').animate({height: '631px'});
+	$('#puzzle').animate({width: '1316px'});
+	$('.box').animate({height:'123px'});
 	$('.box').animate({width:'260px'});
-	$('.img').animate({height:'117px'});
+	$('.img').animate({height:'123px'});
 	$('.img').animate({width:'260px'})
 }
 /*expandP();*/
@@ -125,6 +141,9 @@ let click = 0;
 
 	$('#piece1').on('click',function(){   // by putting the image1 function in this, it was able to 
 		if(click===0) {
+			// begin();
+			console.log(click)
+			moving();  // this call on the move function up top to start the game.
 			image1();
 		}
 		if(click===1) {
