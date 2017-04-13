@@ -17,8 +17,8 @@
     height: 279px;
     width: 311px;
     position: relative;
-    top: -162px;
-    left: 1063px;
+    top: -532px;
+    left: 47px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
 }
@@ -29,20 +29,23 @@
     display: inline-table;
     position: relative;
     top: 121px;
-    left: 63px;
+    left: 443px;
     border-radius: 15%;
     box-shadow: 5px 5px 10px 10px;
     background-color: ghostwhite;
+    /*z-index: -1;*/
 }
 #time{
 	border: black solid;
+	border-radius: 24%;
     height: 50px;
     width: 310px;
     position: relative;
-    top: -112px;
-    left: -3px;
+    top: 254px;
+    left: 0;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
+    z-index: -1;
 }
 aside {
     height: 246px;
@@ -50,10 +53,11 @@ aside {
     border: black solid;
     float: right;
     position: relative;
-    bottom: 723px;
-    right: 46px;
+    bottom: 488px;
+    right: 1062px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
+	z-index: -1;
 }
 .img{
     height: 46px;

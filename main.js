@@ -34,43 +34,46 @@ function newGame(){
 	})
 }
 newGame();
-// moving();
 
-/*class begin{
-	constructor(){
-		this.
-	}
-}*/
+function expandP(){
+	$('#puzzle').animate({height:'647px'});
+	$('#puzzle').animate({width:'1350px'});
+	$('.box').animate({height:'117px'});
+	$('.box').animate({width:'260px'});
+	$('.img').animate({height:'117px'});
+	$('.img').animate({width:'260px'})
+}
+/*expandP();*/
 
 	function image1(){
-		$('#1').append('<img class="img" src="https://pbs.twimg.com/profile_images/765796728243163137/gh305Klf.jpg">')
+		$('#1').append('<img class="img" src="images/piece 1.png">');
 	}
 	function image2(){
-		$('#2').append('<img class="img" src="http://az616578.vo.msecnd.net/files/2016/09/09/636090261058271584688285615_Dog.jpg">')
+		$('#2').append('<img class="img" src="images/piece2.png">');
 	}
 	function image3(){
-		$('#3').append('<img class="img" src="https://static.pexels.com/photos/60224/pexels-photo-60224.jpeg">')
+		$('#3').append('<img class="img" src="images/piece3.png">');
 	}
 	function image4(){
-		$('#4').append('<img class="img" src="http://www.clipartbest.com/cliparts/LiK/zpe/LiKzpeE4T.png">')
+		$('#4').append('<img class="img" src="images/piece 4.png">');
 	}
 	function image5(){
-		$('#5').append('<img id="img5" src"">')
+		$('#5').append('<img class="img" src="images/piece5.png">');
 	}
 	function image6(){
-		$('#6').append('<img id="img5" src"">')
+		$('#6').append('<img class="img" src="images/piece6.png">');
 	}
 	function image7(){
-		$('#7').append('<img id="img5" src"">')
+		$('#7').append('<img class="img" src="images/piece7.png">');
 	}
 	function image8(){
-		$('#8').append('<img id="img5" src"">')
+		$('#8').append('<img class="img" src="images/piece8.png">');
 	}
 	function image9(){
-		$('#9').append('<img id="img5" src"">')
+		$('#9').append('<img class="img" src="images/piece9.png">');
 	}
 	function image10(){
-		$('#10').append('<img id="img5" src"">')
+		$('#10').append('<img class="img" src="images/piece10.png">');
 	}
 	function image11(){
 		$('#11').append('<img id="img5" src"">')
@@ -194,9 +197,10 @@ let click = 0;
 			image24()
 		}
 		if(click===24) {
-			image25()
-			alert('winner');  // add another if staement, yes or no to play again.
-			location.reload();
+			image25();
+			expandP();
+			/*alert('winner'); */ // add another if statement, yes or no to play again.
+			// location.reload();
 		}
 
 		click+=1;			// this checks the click, and adds one so that the next event can happen.
