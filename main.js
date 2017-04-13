@@ -41,15 +41,15 @@ function start(){
   let moveO = $('#gameBoard').width() -60;
   let reinvent1 = moveU * Math.random();   //adds the random movement, using math(ehich would assing a number 1-9)
   let reinvent2 = moveO * Math.random();
-  return [reinvent1,reinvent2]
+  return [reinvent1,reinvent2]  		//return an array with the two variables i created.
 }
 
 function moving(){
-	let random = start();
-  $('#piece1').animate({
-  	top:random[0],
-  	left:random[1]
-  },1000,function(){
+	let random = start();   // calling on the first function
+  $('#piece1').animate({	// begins the radom animation
+  	top:random[0],			//calling on the first position of the array, top and left were placed
+  	left:random[1]			// because right and bottom threw the div off the board.
+  },1000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 

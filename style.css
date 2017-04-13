@@ -18,6 +18,8 @@
     position: relative;
     top: -162px;
     left: 1063px;
+    box-shadow: 5px 5px 10px;
+    background-color: ghostwhite;
 }
 #gameBoard {
     height: 647px;
@@ -27,13 +29,19 @@
     position: relative;
     top: 121px;
     left: 63px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px 10px;
+    background-color: ghostwhite;
 }
 #time{
 	border: black solid;
     height: 50px;
-    width: 303px;
+    width: 310px;
     position: relative;
-    top: -131px;
+    top: -112px;
+    left: -3px;
+    box-shadow: 5px 5px 10px;
+    background-color: ghostwhite;
 }
 aside {
     height: 246px;
@@ -43,6 +51,8 @@ aside {
     position: relative;
     bottom: 723px;
     right: 46px;
+    box-shadow: 5px 5px 10px;
+    background-color: ghostwhite;
 }
 #img1{
 	height: 25px;
@@ -59,4 +69,15 @@ aside {
 #img4{
 	height: 25px;
     width: 29px;
+}
+body{
+	background-color: lightblue;
+}
+h1{
+   
+    position: relative;
+    left: 373px;
+    top: 82px;
+    font-size: 42px;
+    font-style: chalkduster;
 }
