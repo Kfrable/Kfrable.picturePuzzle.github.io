@@ -20,7 +20,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },10000,function(){		//setting the speed.
+  },1500,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
@@ -76,49 +76,49 @@ function expandP(){
 		$('#10').append('<img class="img" src="images/piece10.png">');
 	}
 	function image11(){
-		$('#11').append('<img id="img5" src"">')
+		$('#11').append('<img class="img" src="images/piece11.png">');
 	}
 	function image12(){
-		$('#12').append('<img id="img5" src"">')
+		$('#12').append('<img class="img" src="images/piece12.png">');
 	}
 	function image13(){
-		$('#13').append('<img id="img5" src"">')
+		$('#13').append('<img class="img" src="images/piece13.png">');
 	}
 	function image14(){
-		$('#14').append('<img id="img5" src"">')
+		$('#14').append('<img class="img" src="images/piece14.png">');
 	}
 	function image15(){
-		$('#15').append('<img id="img5" src"">')
+		$('#15').append('<img class="img" src="images/piece15.png">');
 	}
 	function image16(){
-		$('#16').append('<img id="img5" src"">')
+		$('#16').append('<img class="img" src="images/piece16.png">');
 	}
 	function image17(){
-		$('#17').append('<img id="img5" src"">')
+		$('#17').append('<img class="img" src="images/piece17.png">');
 	}
 	function image18(){
-		$('#18').append('<img id="img5" src"">')
+		$('#18').append('<img class="img" src="images/piece18.png">');
 	}
 	function image19(){
-		$('#19').append('<img id="img5" src"">')
+		$('#19').append('<img class="img" src="images/piece19.png">');
 	}
 	function image20(){
-		$('#20').append('<img id="img5" src"">')
+		$('#20').append('<img class="img" src="images/piece20.png">');
 	}
 	function image21(){
-		$('#21').append('<img id="img5" src"">')
+		$('#21').append('<img class="img" src="images/piece21.png">');
 	}
 	function image22(){
-		$('#22').append('<img id="img5" src"">')
+		$('#22').append('<img class="img" src="images/piece22.png">');
 	}
 	function image23(){
-		$('#23').append('<img id="img5" src"">')
+		$('#23').append('<img class="img" src="images/piece23.png">');
 	}
 	function image24(){
-		$('#24').append('<img id="img5" src"">')
+		$('#24').append('<img class="img" src="images/piece24.png">');
 	}
 	function image25(){
-		$('#25').append('<img id="img5" src"">')
+		$('#25').append('<img class="img" src="images/piece25.png">');
 	}
 	
 let click = 0;
@@ -198,8 +198,9 @@ let click = 0;
 		}
 		if(click===24) {
 			image25();
+			alert('winner'); 
 			expandP();
-			/*alert('winner'); */ // add another if statement, yes or no to play again.
+			 // add another if statement, yes or no to play again.
 			// location.reload();
 		}
 
