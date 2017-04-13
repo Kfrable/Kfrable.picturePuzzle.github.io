@@ -49,7 +49,7 @@ function moving(){
   $('#piece1').animate({
   	top:random[0],
   	left:random[1]
-  },10000,function(){
+  },1000,function(){
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
