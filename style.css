@@ -37,15 +37,15 @@
 }
 #time{
 	border: black solid;
-	border-radius: 24%;
+    border-radius: 24%;
     height: 50px;
-    width: 310px;
+    width: 106px;
     position: relative;
-    top: 254px;
-    left: -17px;
+    top: -851px;
+    left: 813px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
-    font-size:30px;
+    font-size: 49px;
     z-index: -1;
 }
 aside {
@@ -58,6 +58,7 @@ aside {
     right: 1089px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
+    /*background: #222;*/
 	z-index: -1;
 }
 .img{
@@ -82,8 +83,14 @@ body{
 h1{
    
     position: relative;
-    left: 373px;
+    left: 684px;
     top: 82px;
     font-size: 42px;
     font-style: chalkduster;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+p{
+	font-size: 20px;
+    text-align: center;
+    padding: 4px 18px;
 }

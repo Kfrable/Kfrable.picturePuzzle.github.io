@@ -5,6 +5,23 @@ function begin(){
 		moving();
 	})
 }
+/*	let clock = 1000;          //start time
+ let position = $('#time');
+ position.html(clock)    //this basically appends clock to position
+ 
+ function countDown(){
+ 	let clear = setInterval(function(){
+ 		position.html(clock);
+ 		clock -=1;    //taking the time down with one.
+ 	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
+ 	   	clearInterval(clear);
+ 	   	alert('Time is up!');
+ 	   	location.reload()
+ 	   	}
+ 	},800)
+ }
+  
+}*/
 
 
 function start(){
@@ -21,7 +38,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },1500,function(){		//setting the speed.
+  },15000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
@@ -36,7 +53,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 60;          //start time
+ let clock = 1000;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
@@ -46,12 +63,18 @@ newGame();
  		clock -=1;    //taking the time down with one.
  	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
  	   	clearInterval(clear);
-
- 	   }
- 	},1000)
+ 	   	alert('Time is up!');
+ 	   	location.reload()
+ 	   	}
+ 	},800)
  }
   countDown()
-function expandP(){
+
+class Game{
+	constructor(timer){
+		this.timer=timer
+	}
+	 expandP(){
 	$('#puzzle').animate({height: '631px'});
 	$('#puzzle').animate({width: '1316px'});
 	$('.box').animate({height:'123px'});
@@ -59,6 +82,16 @@ function expandP(){
 	$('.img').animate({height:'123px'});
 	$('.img').animate({width:'260px'})
 }
+}
+let game = new Game(100);
+/*function expandP(){
+	$('#puzzle').animate({height: '631px'});
+	$('#puzzle').animate({width: '1316px'});
+	$('.box').animate({height:'123px'});
+	$('.box').animate({width:'260px'});
+	$('.img').animate({height:'123px'});
+	$('.img').animate({width:'260px'})
+}*/
 /*expandP();*/
 
 	function image1(){
@@ -217,8 +250,9 @@ let click = 0;
 		}
 		if(click===24) {
 			image25();
-			alert('winner'); 
-			expandP();
+			alert('winner');
+			game.expandP(); 
+			/*expandP();*/
 			 // add another if statement, yes or no to play again.
 			// location.reload();
 		}
