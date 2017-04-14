@@ -37,7 +37,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 60;          //start time
+ let clock = 1000;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
@@ -47,9 +47,13 @@ newGame();
  		clock -=1;    //taking the time down with one.
  	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
  	   	clearInterval(clear);
- 	   	alert('Time is up!');
+ 	   	// alert('Time is up!');
  	   	location.reload()
  	   	}
+ 	   	if(expandP()){
+ 	   		clearInterval(clear);
+ 	   	}
+ 	   	
  	},800)
  }
   countDown()
@@ -171,7 +175,7 @@ let click = 0;
 		$('box').attr('id',`${click}`);  //calling the variable click
  		$(`#${click + 1}`).append(`<img class="img" src="images/piece${click + 1}.png">`);  // with the back tics, was able to call a variable
  		if(click===0){																		// where with out them, in side would just be text/string.
- 			moving();
+ 			// moving();
  		}
  		if(click===24){
 		 	alert('winner');
