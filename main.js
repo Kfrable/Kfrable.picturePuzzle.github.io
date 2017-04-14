@@ -38,7 +38,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },15000,function(){		//setting the speed.
+  },1000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
