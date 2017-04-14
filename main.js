@@ -5,23 +5,7 @@ function begin(){
 		moving();
 	})
 }
-/*	let clock = 1000;          //start time
- let position = $('#time');
- position.html(clock)    //this basically appends clock to position
- 
- function countDown(){
- 	let clear = setInterval(function(){
- 		position.html(clock);
- 		clock -=1;    //taking the time down with one.
- 	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
- 	   	clearInterval(clear);
- 	   	alert('Time is up!');
- 	   	location.reload()
- 	   	}
- 	},800)
- }
-  
-}*/
+
 
 
 function start(){
@@ -53,7 +37,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 1000;          //start time
+ let clock = 60;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
@@ -93,9 +77,20 @@ let game = new Game(100);
 	$('.img').animate({width:'260px'})
 }*/
 /*expandP();*/
+/*let img = ['#1','#2','#3','#4','#5','#6','#7','#8','#9','#10','#11','#12','#13','#14','#15','#16','#17','#18','#19','#20','#21','#22','#23','#24','#25'];*/
+// let pic = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+// function image(){
+// 	let src = '<img class="img" src=images/piece '
+// 	for(let i = 0; i < pic.length; i++){
+// 		$('box').attr('id',`${i}`);
+// 		$(`#${i + 1}`).append(`<img class="img" src="images/piece${i + 1}.png">`);
+// 		console.log(src +''+ [i]+'.png>')
+// 		console.log($(`#${i}`));
+// 	}
+// }
 
-	function image1(){
-		$('#1').append('<img class="img" src="images/piece 1.png">');
+	/*function image1(){
+		//$('#1').append('<img class="img" src="images/piece0.png">');
 	}
 	function image2(){
 		$('#2').append('<img class="img" src="images/piece2.png">');
@@ -104,7 +99,7 @@ let game = new Game(100);
 		$('#3').append('<img class="img" src="images/piece3.png">');
 	}
 	function image4(){
-		$('#4').append('<img class="img" src="images/piece 4.png">');
+		$('#4').append('<img class="img" src="images/piece4.png">');
 	}
 	function image5(){
 		$('#5').append('<img class="img" src="images/piece5.png">');
@@ -168,96 +163,107 @@ let game = new Game(100);
 	}
 	function image25(){
 		$('#25').append('<img class="img" src="images/piece25.png">');
-	}
-	
+	}*/
+let pic = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];	
 let click = 0;
 
 	$('#piece1').on('click',function(){   // by putting the image1 function in this, it was able to 
-		if(click===0) {
-			// begin();
-			console.log(click)
-			moving();  // this call on the move function up top to start the game.
-			image1();
-		}
-		if(click===1) {
-			image2();
-		}
-		if(click===2) {
-			image3()
-		}
-		if(click===3) {
-			image4()
-		}
-		if(click===4) {
-			image5()
-		}
-		if(click===5) {
-			image6();
-		}
-		if(click===6) {
-			image7();
-		}
-		if(click===7) {
-			image8()
-		}
-		if(click===8) {
-			image9()
-		}
-		if(click===9) {
-			image10()
-		}
-		if(click===10) {
-			image11();
-		}
-		if(click===11) {
-			image12();
-		}
-		if(click===12) {
-			image13()
-		}
-		if(click===13) {
-			image14()
-		}
-		if(click===14) {
-			image15()
-		}
-		if(click===15) {
-			image16();
-		}
-		if(click===16) {
-			image17();
-		}
-		if(click===17) {
-			image18()
-		}
-		if(click===18) {
-			image19()
-		}
-		if(click===19) {
-			image20()
-		}
-		if(click===20) {
-			image21();
-		}
-		if(click===21) {
-			image22();
-		}
-		if(click===22) {
-			image23()
-		}
-		if(click===23) {
-			image24()
-		}
-		if(click===24) {
-			image25();
-			alert('winner');
-			game.expandP(); 
-			/*expandP();*/
-			 // add another if statement, yes or no to play again.
-			// location.reload();
-		}
+		$('box').attr('id',`${click}`);  //calling the variable click
+ 		$(`#${click + 1}`).append(`<img class="img" src="images/piece${click + 1}.png">`);  // with the back tics, was able to call a variable
+ 		if(click===0){																		// where with out them, in side would just be text/string.
+ 			moving();
+ 		}
+ 		if(click===24){
+		 	alert('winner');
+		 	game.expandP(); 
+ 		}
+ 		click+=1;  // allows click to add 1 and go to the next item. 
 
-		click+=1;			// this checks the click, and adds one so that the next event can happen.
+		// if(click===0) {
+		// 	// begin();
+		// 	console.log(click)
+		// 	/*moving();*/  // this call on the move function up top to start the game.
+		// 	image();   //took 1 out, reinsert later
+		// }
+		// if(click===1) {
+		// 	image();      //took aout the 2, add later iff needed.
+		// }
+		// if(click===2) {
+		// 	image3()
+		// }
+		// if(click===3) {
+		// 	image4()
+		// }
+		// if(click===4) {
+		// 	image5()
+		// }
+		// if(click===5) {
+		// 	image6();
+		// }
+		// if(click===6) {
+		// 	image7();
+		// }
+		// if(click===7) {
+		// 	image8()
+		// }
+		// if(click===8) {
+		// 	image9()
+		// }
+		// if(click===9) {
+		// 	image10()
+		// }
+		// if(click===10) {
+		// 	image11();
+		// }
+		// if(click===11) {
+		// 	image12();
+		// }
+		// if(click===12) {
+		// 	image13()
+		// }
+		// if(click===13) {
+		// 	image14()
+		// }
+		// if(click===14) {
+		// 	image15()
+		// }
+		// if(click===15) {
+		// 	image16();
+		// }
+		// if(click===16) {
+		// 	image17();
+		// }
+		// if(click===17) {
+		// 	image18()
+		// }
+		// if(click===18) {
+		// 	image19()
+		// }
+		// if(click===19) {
+		// 	image20()
+		// }
+		// if(click===20) {
+		// 	image21();
+		// }
+		// if(click===21) {
+		// 	image22();
+		// }
+		// if(click===22) {
+		// 	image23()
+		// }
+		// if(click===23) {
+		// 	image24()
+		// }
+		// if(click===24) {
+		// 	image25();
+		// 	alert('winner');
+		// 	game.expandP(); 
+		// 	/*expandP();*/
+		// 	 // add another if statement, yes or no to play again.
+		// 	// location.reload();
+		// }
+
+					// this checks the click, and adds one so that the next event can happen.
 
 						// call with the click event listener.
 	})
