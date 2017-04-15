@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
@@ -8,9 +8,13 @@
 <body>
 <header>
 	<h1>PUZZLE CLICKER</h1>
-	<button id='start'></button>
+	<div id='start'></div>
 	<button id='new'>New Game</button>
+	<div id='time'></div>
 </header>
+<aside><p>See the little ball, click it! this will start the game. You have to catch it bu clicking on it. Every Time you click it, an image will fill into the puzzle above. Finsh before time runs out, and you'll get to see the full picture...Enjoy.</p>
+	</aside>
+	
 	<div id='gameBoard'>
 		<div id='piece1'></div>
 	</div>
@@ -42,10 +46,7 @@
 			<div id='25' class='box'></div>
 		
 		</div>
-	<!-- <button id='start'>START</button> -->
-	<aside><p>See the little ball, click it! this will start the game. You have to catch it bu clicking on it. Every Time you click it, an image will fill into the puzzle above. Finsh before time runs out, and you'll get to see the full picture...Enjoy.</p>
-	</aside>
-	<div id='time'></div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src='main.js'></script>
 

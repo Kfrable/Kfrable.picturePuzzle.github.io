@@ -1,7 +1,7 @@
 #piece1{
 	height:60px;
 	width:60px;
-	position: relative;
+	position: absolute;
 	left:78px;
 	border:black solid 2px;
 	border-radius:100%;
@@ -16,33 +16,34 @@
     border: black solid 2px;
     height: 246px;
     width: 281px;
-    position: relative;
-    top: -532px;
-    left: 47px;
+    position: absolute;
+    top: 84px;
+    left: 15px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
 }
 #gameBoard {
     height: 647px;
     width: 936px;
-    border: black solid;
+    /* border: white solid; */
     display: inline-table;
-    position: relative;
-    top: 121px;
-    left: 410px;
+    position: absolute;
+    top: 187px;
+    left: 251px;
     border-radius: 15%;
-    box-shadow: 5px 5px 10px 10px;
-    background-color: ghostwhite;
-    /*z-index: -1;*/
+    /* box-shadow: 5px 5px 10px 10px; */
+    /* background-color: ghostwhite; */
+    /* z-index: -1; */
 }
-#time{
-	border: black solid;
+
+#time {
+    border: black solid;
     border-radius: 24%;
     height: 50px;
     width: 106px;
-    position: relative;
-    top: -851px;
-    left: 813px;
+    position: absolute;
+    top: 75px;
+    left: 658px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
     font-size: 49px;
@@ -53,9 +54,9 @@ aside {
     width: 281px;
     border: black solid;
     float: right;
-    position: relative;
-    bottom: 488px;
-    right: 1089px;
+    position: absolute;
+    bottom: -132px;
+    right: 1136px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
     /*background: #222;*/
@@ -78,14 +79,15 @@ aside {
     width: 29px;
 }*/
 body{
-	background-color: lightblue;
+	background-image: url('http://www.psdgraphics.com/file/puzzle-frame.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-h1{
-   
-    position: relative;
-    left: 684px;
-    top: 82px;
-    font-size: 42px;
+h1 {
+    position: absolute;
+    left: 491px;
+    top: -30px;
+    font-size: 50px;
     font-style: chalkduster;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
@@ -93,4 +95,11 @@ p{
 	font-size: 20px;
     text-align: center;
     padding: 4px 18px;
+}
+#new{
+    height: 40px;
+    width: 92px;
+    font-size: 14px;
+    border-radius: 30%;
+    box-shadow: 5px 5px;
 }

@@ -48,10 +48,9 @@ newGame();
  	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
  	   	clearInterval(clear);
  	   	// alert('Time is up!');
- 	   	location.reload()
- 	   	}
- 	   	if(expandP()){
- 	   		clearInterval(clear);
+ 	   	// location.reload()
+ 	   	}else{
+ 	   	clearInterval(clear);
  	   	}
  	   	
  	},800)
@@ -69,6 +68,7 @@ class Game{
 	$('.box').animate({width:'260px'});
 	$('.img').animate({height:'123px'});
 	$('.img').animate({width:'260px'})
+	$('#gameBoard').animate({display:'hidden'});    // not working yet.
 }
 }
 let game = new Game(100);
@@ -175,7 +175,7 @@ let click = 0;
 		$('box').attr('id',`${click}`);  //calling the variable click
  		$(`#${click + 1}`).append(`<img class="img" src="images/piece${click + 1}.png">`);  // with the back tics, was able to call a variable
  		if(click===0){																		// where with out them, in side would just be text/string.
- 			// moving();
+ 			moving();
  		}
  		if(click===24){
 		 	alert('winner');
