@@ -37,7 +37,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 1000;          //start time
+ let clock = 60;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
@@ -47,11 +47,19 @@ newGame();
  		clock -=1;    //taking the time down with one.
  	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
  	   	clearInterval(clear);
+ 	   	
+ 	$('#puzzle').animate({height: '631px'});
+	$('#puzzle').animate({width: '1403px'});
+	$('.box').animate({height:'123px'});
+	$('.box').animate({width:'277.4px'});
+	$('.img').animate({height:'123px'});
+	$('.img').animate({width:'277.4px'});
+ 	   	
  	   	// alert('Time is up!');
  	   	// location.reload()
- 	   	}else{
+ 	   	}/*else{
  	   	clearInterval(clear);
- 	   	}
+ 	   	}*/
  	   	
  	},800)
  }
@@ -63,11 +71,11 @@ class Game{
 	}
 	 expandP(){
 	$('#puzzle').animate({height: '631px'});
-	$('#puzzle').animate({width: '1316px'});
+	$('#puzzle').animate({width: '1403px'});
 	$('.box').animate({height:'123px'});
-	$('.box').animate({width:'260px'});
+	$('.box').animate({width:'277.4px'});
 	$('.img').animate({height:'123px'});
-	$('.img').animate({width:'260px'})
+	$('.img').animate({width:'277.4px'});
 	$('#gameBoard').animate({display:'hidden'});    // not working yet.
 }
 }

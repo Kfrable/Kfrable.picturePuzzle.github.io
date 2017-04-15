@@ -5,17 +5,18 @@
 	left:78px;
 	border:black solid 2px;
 	border-radius:100%;
+    box-shadow: 5px 14px 10px;
 }
 .box{
    /* border: black solid;*/
-    height: 46px;
-    width: 53px;
+    height: 31px;
+    width: 31px;
     display: inline-block;
 }
 #puzzle {
     border: black solid 2px;
-    height: 246px;
-    width: 281px;
+    height: 175px;
+    width: 175px;
     position: absolute;
     top: 84px;
     left: 15px;
@@ -63,8 +64,8 @@ aside {
 	z-index: -1;
 }
 .img{
-    height: 46px;
-    width: 53px;
+    height: 31px;
+    width: 31px;
 }
 /*#img2{
 	height: 25px;
@@ -92,7 +93,7 @@ h1 {
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 p{
-	font-size: 20px;
+	font-size: 48px;
     text-align: center;
     padding: 4px 18px;
 }
@@ -102,4 +103,25 @@ p{
     font-size: 14px;
     border-radius: 30%;
     box-shadow: 5px 5px;
+}
+#Instructions{
+    border: black solid 3px;
+    position: absolute;
+    top: 208px;
+    width: 700px;
+    height: 542px;
+    border-radius: 69px;
+    box-shadow: 5px 18px 10px;
+    left: 366px;
+    z-index: -1;
+}
+#start{
+    height: 60px;
+    width: 146px;
+    font-size: 44px;
+    position: absolute;
+    left: 651px;
+    top: 680px;
+    background-color: skyblue;
+    border-radius: 25px;
 }
