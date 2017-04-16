@@ -1,3 +1,4 @@
+/*@media screen and (min-width: 1025px){*/
 #piece1{
 	height:60px;
 	width:60px;
@@ -125,9 +126,15 @@ p{
     background-color: skyblue;
     border-radius: 25px;
 }
+/*}*/
 
 
-@media screen and (min-width: 298px) {
+/*body{
+    background-image: url('http://www.psdgraphics.com/file/puzzle-frame.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 #gameBoard {
     height: 479px;
     width: 560px;
@@ -176,18 +183,19 @@ h1{
     left: 15px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
-    /*height: 680px;    // js tweak
-    width: 942px;*/
+    /*height: 680px;     js tweak
+    width: 942px;
 }
-.box {
-    /*border: black solid;*/
+.box-m {
+    border: black solid;
     height: 14px;
     width: 14px;
     display: inline-block;
 }
+
 .img{
     height: 14px;
     width: 14px;
     display: inline-block;
 }
-}
+*/*/
