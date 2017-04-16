@@ -22,7 +22,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },1000,function(){		//setting the speed.
+  },11000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
@@ -37,7 +37,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 60;          //start time
+ let clock = 1000;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
@@ -47,13 +47,14 @@ newGame();
  		clock -=1;    //taking the time down with one.
  	   if(clock ===-1){   //the -1 makes it so that the count can reach one.
  	   	clearInterval(clear);
- 	   	
- 	$('#puzzle').animate({height: '631px'});
-	$('#puzzle').animate({width: '1403px'});
-	$('.box').animate({height:'123px'});
-	$('.box').animate({width:'277.4px'});
-	$('.img').animate({height:'123px'});
-	$('.img').animate({width:'277.4px'});
+ 	   	alert('Sorry try agian');
+		 $('#puzzle').animate({height: '755px'});
+		 $('#puzzle').animate({width: '1403px'});
+		 $('#puzzle').animate({top:'74px'});
+		 $('.box').animate({height:'147px'});
+		 $('.box').animate({width:'277.4px'});
+		 $('.img').animate({height:'147px'});
+		 $('.img').animate({width:'277.4px'});
  	   	
  	   	// alert('Time is up!');
  	   	// location.reload()
@@ -70,11 +71,12 @@ class Game{
 		this.timer=timer
 	}
 	 expandP(){
-	$('#puzzle').animate({height: '631px'});
+	$('#puzzle').animate({height: '755px'});
 	$('#puzzle').animate({width: '1403px'});
-	$('.box').animate({height:'123px'});
+	$('#puzzle').animate({top:'74px'});
+	$('.box').animate({height:'147px'});
 	$('.box').animate({width:'277.4px'});
-	$('.img').animate({height:'123px'});
+	$('.img').animate({height:'147px'});
 	$('.img').animate({width:'277.4px'});
 	$('#gameBoard').animate({display:'hidden'});    // not working yet.
 }

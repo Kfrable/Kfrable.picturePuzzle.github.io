@@ -18,7 +18,7 @@
     height: 175px;
     width: 175px;
     position: absolute;
-    top: 84px;
+    top: 305px;
     left: 15px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
@@ -124,4 +124,57 @@ p{
     top: 680px;
     background-color: skyblue;
     border-radius: 25px;
+}
+
+
+@media only screen and (min-width: 238px) {
+#gameBoard {
+    height: 479px;
+    width: 560px;
+    border: black solid; 
+    display: inline-table;
+    position: absolute;
+    top: 148px;
+    left: 217px;
+}
+h1 {
+    position: absolute;
+    left: 321px;
+    top: -30px;
+    font-size: 38px;
+    font-style: chalkduster;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+#time {
+    border: black solid;
+    border-radius: 24%;
+    height: 32px;
+    width: 62px;
+    position: absolute;
+    top: 49px;
+    left: 456px;
+    box-shadow: 5px 5px 10px;
+    background-color: ghostwhite;
+    font-size: 31px;
+    z-index: -1;
+}
+h1{
+    position: absolute;
+    left: 321px;
+    top: -25px;
+    font-size: 38px;
+    font-style: chalkduster;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+#puzzle {
+    border: black solid 2px;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 305px;
+    left: 15px;
+    box-shadow: 5px 5px 10px;
+    background-color: ghostwhite;
+}
+
 }
