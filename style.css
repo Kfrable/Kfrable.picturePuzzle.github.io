@@ -127,7 +127,7 @@ p{
 }
 
 
-@media only screen and (min-width: 238px) {
+@media screen and (min-width: 298px) {
 #gameBoard {
     height: 479px;
     width: 560px;
@@ -136,6 +136,7 @@ p{
     position: absolute;
     top: 148px;
     left: 217px;
+
 }
 h1 {
     position: absolute;
@@ -168,13 +169,25 @@ h1{
 }
 #puzzle {
     border: black solid 2px;
-    height: 120px;
-    width: 120px;
+    height: 86px;
+    width: 86px;
     position: absolute;
     top: 305px;
     left: 15px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
+    /*height: 680px;    // js tweak
+    width: 942px;*/
 }
-
+.box {
+    /*border: black solid;*/
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+}
+.img{
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+}
 }

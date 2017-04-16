@@ -22,7 +22,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },11000,function(){		//setting the speed.
+  },20000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
@@ -74,11 +74,20 @@ class Game{
 	$('#puzzle').animate({height: '755px'});
 	$('#puzzle').animate({width: '1403px'});
 	$('#puzzle').animate({top:'74px'});
-	$('.box').animate({height:'147px'});
+	/*$('.box').animate({height:'147px'});
 	$('.box').animate({width:'277.4px'});
 	$('.img').animate({height:'147px'});
-	$('.img').animate({width:'277.4px'});
+	$('.img').animate({width:'277.4px'});*/
+	$('.img').animate({height:'129px'});
+	$('.img').animate({width:'184.4px'});		// for the media query
+	$('.box').animate({height:'129px'});
+	$('.box').animate({width:'184.4px'});
+	$('#puzzle').animate({height:'663px'});
+	$('#puzzle').animate({width:'941px'});
+	$('#puzzle').animate({top:'50px'});
+
 	$('#gameBoard').animate({display:'hidden'});    // not working yet.
+	
 }
 }
 let game = new Game(100);
