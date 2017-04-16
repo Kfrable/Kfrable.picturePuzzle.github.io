@@ -24,3 +24,9 @@ https://trello-attachments.s3.amazonaws.com/58ed644360c7d5ab61acc0b7/58ed67e4a1d
 https://trello-attachments.s3.amazonaws.com/58ed644360c7d5ab61acc0b7/58ed67e4a1d654ac1db77da9/8cdfe483277bc6b5d2525327b05466d2/wire_frame3.jpg
 
 https://trello-attachments.s3.amazonaws.com/58ed644360c7d5ab61acc0b7/58ed67e4a1d654ac1db77da9/feafef64b6f9a98a472697f084acd291/wire_frame_4.jpg
+
+## rules of the game
+The player will begin by clicking on the ball, located in the upper left hand corner. The ball will begin to move quickly, where it is your job to chase it and continue to   click on it. Everytime you click it, the box on the left hand side will fill with a piece of the puzzle. The goal is to click on the ball until the image is complete. If you make it, you will recieve a message saying you have won, and the box, containing the image will grow to take up the screen giving a better view of what was just put together. If you don't make it in time, a message will appear saying that you have lost, and the image will still grow, to reveal what yu were able to piece together thus far. At any time, a new game can be started, and instructions can be viewed.
+
+## Issues
+As of right now, I'm still having issues with mobile, and getting the clock to stop if a user has won. Those are the only porblems that i can see, and should be resolved soon.
