@@ -25,3 +25,5 @@ The player will begin by clicking on the ball, located in the upper left hand co
 
 ## Issues
 As of right now, I'm still having issues with mobile, and getting the clock to stop if a user has won. Those are the only porblems that i can see, and should be resolved soon.
+
+https://kfrable.github.io/Kfrable.picturePuzzle.github.io/instructions.html
