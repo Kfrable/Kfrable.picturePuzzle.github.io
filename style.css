@@ -1,4 +1,4 @@
-*@media  (min-width: 1025px){*/
+/*@media  (min-width: 1025px){*/
 #piece1{
 	height:60px;
 	width:60px;
@@ -82,7 +82,7 @@ p{
     text-align: center;
     padding: 4px 18px;
 }
-#home {
+#home{
     height: 26px;
     width: 92px;
     font-size: 14px;
@@ -90,6 +90,7 @@ p{
     box-shadow: 5px 5px;
     color: steelblue;
     font-size: 8px;
+
 }
 #new{
     height: 26px;
