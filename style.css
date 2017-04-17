@@ -1,4 +1,4 @@
-/*@media  (min-width: 1025px){*/
+*@media  (min-width: 1025px){*/
 #piece1{
 	height:60px;
 	width:60px;
@@ -120,6 +120,9 @@ p{
     top: 680px;
     background-color: skyblue;
     border-radius: 25px;
+}
+#lin{
+    font-size:14px;
 }
 
 
