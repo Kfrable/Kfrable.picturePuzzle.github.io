@@ -1,4 +1,4 @@
-/*@media screen and (min-width: 1025px){*/
+/*@media  (min-width: 1025px){*/
 #piece1{
 	height:60px;
 	width:60px;
@@ -27,15 +27,11 @@
 #gameBoard {
     height: 647px;
     width: 936px;
-    /* border: white solid; */
     display: inline-table;
     position: absolute;
     top: 187px;
     left: 251px;
     border-radius: 15%;
-    /* box-shadow: 5px 5px 10px 10px; */
-    /* background-color: ghostwhite; */
-    /* z-index: -1; */
 }
 
 #time {
@@ -68,18 +64,6 @@ aside {
     height: 31px;
     width: 31px;
 }
-/*#img2{
-	height: 25px;
-    width: 29px;
-}
-#img3{
-	height: 25px;
-    width: 29px;
-}
-#img4{
-	height: 25px;
-    width: 29px;
-}*/
 body{
 	background-image: url('http://www.psdgraphics.com/file/puzzle-frame.jpg');
     background-size: 100%;
@@ -94,42 +78,53 @@ h1 {
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 p{
-	font-size: 48px;
+	font-size: 36px;
     text-align: center;
     padding: 4px 18px;
 }
-#new{
-    height: 40px;
+#home{
+    height: 26px;
     width: 92px;
     font-size: 14px;
     border-radius: 30%;
     box-shadow: 5px 5px;
+    color: steelblue;
+    font-size: 8px;
+
+}
+#new{
+    height: 26px;
+    width: 92px;
+    font-size: 14px;
+    border-radius: 30%;
+    box-shadow: 5px 5px;
+    color: steelblue;
 }
 #Instructions{
     border: black solid 3px;
     position: absolute;
     top: 208px;
-    width: 700px;
+    width: 938px;
     height: 542px;
     border-radius: 69px;
     box-shadow: 5px 18px 10px;
-    left: 366px;
+    left: 246px;
     z-index: -1;
 }
 #start{
     height: 60px;
     width: 146px;
     font-size: 44px;
-    position: absolute;
+    position: relative;
     left: 651px;
     top: 680px;
     background-color: skyblue;
     border-radius: 25px;
 }
-/*}*/
 
 
-/*body{
+@media  and (max-width:480px){
+body{
     background-image: url('http://www.psdgraphics.com/file/puzzle-frame.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -183,8 +178,8 @@ h1{
     left: 15px;
     box-shadow: 5px 5px 10px;
     background-color: ghostwhite;
-    /*height: 680px;     js tweak
-    width: 942px;
+   /* height: 680px;     js tweak
+    width: 942px;*/
 }
 .box-m {
     border: black solid;
@@ -198,4 +193,4 @@ h1{
     width: 14px;
     display: inline-block;
 }
-*/*/
+}
