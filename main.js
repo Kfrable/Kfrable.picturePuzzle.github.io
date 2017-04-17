@@ -12,7 +12,7 @@ function start(){
  
   let moveU = $('#gameBoard').height() - 60; // gives it padding, and stops it from going off the board
   let moveO = $('#gameBoard').width() -60;
-  let reinvent1 = moveU * Math.random();   //adds the random movement, using math(ehich would assing a number 1-9)
+  let reinvent1 = moveU * Math.random();   //adds the random movement, using math(which assigns a number and multiplies it.)
   let reinvent2 = moveO * Math.random();
   return [reinvent1,reinvent2]  		//return an array with the two variables i created.
 }
@@ -22,7 +22,7 @@ function moving(){
   $('#piece1').animate({	// begins the radom animation
   	top:random[0],			//calling on the first position of the array, top and left were placed
   	left:random[1]			// because right and bottom threw the div off the board.
-  },20000,function(){		//setting the speed.
+  },1000,function(){		//setting the speed.
   	moving()         // need to call on it here, or it will move to a new position, and stop.
   } );
 
@@ -37,7 +37,7 @@ function newGame(){
 }
 newGame();
  
- let clock = 1000;          //start time
+ let clock = 120;          //start time
  let position = $('#time');
  position.html(clock)    //this basically appends clock to position
  
